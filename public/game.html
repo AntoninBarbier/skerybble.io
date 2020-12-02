@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Skerybble.io</title>
+</head>
+
+<body>
+    <div class="room-container">
+        <p>Salle <span class="room-name"></span></p>
+        <a href="index.html">Quitter la salle<i class="fas fa-sign-out-alt"></i></a>
+    </div>
+    <div class="user-list"></div>
+    <div class="game-container" id="game-container"></div>
+    <div class="chat-container">
+        <!-- <h2>Chat !</h2> -->
+        <div class="chat-messages"></div>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Entrez votre message" required autocomplete="off" />
+                <!-- <button class="btn">Envoyer</button> -->
+            </form>
+        </div>
+    </div>
+    <div class="tools-container">
+        <div onClick="pickColor('red')"></div>
+        <div onClick="pickColor('yellow')"></div>
+        <div onClick="pickColor('red')"></div>
+        <div onClick="pickColor('red')"></div>
+        <div onClick="pickColor('red')"></div>
+        <div onClick="pickColor('red')"></div>
+        <div onClick="pickColor('red')"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/p5/p5.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sketch.js"></script>
+</body>
+
+</html>
